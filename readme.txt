@@ -2,10 +2,10 @@
 Contributors: (this should be a list of wordpress.org userid's)
 Donate link: https://ruudborghouts.nl/
 Tags: comments, spam
-Requires at least: 5.2.4
-Tested up to: 5.2
-Stable tag: 0.0.1
-Requires PHP: 7.2.24
+Requires at least: 5.4.1
+Tested up to: 5.4
+Stable tag: 0.0.2
+Requires PHP: 7.3.16
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 

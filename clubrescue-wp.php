@@ -3,9 +3,9 @@
  * Plugin Name: Club.Rescue-WP
  * Plugin URI: https://github.com/clubrescue/clubrescue-wp
  * Description: Voegt functies en shortcodes toe voor het integreren van Club.Redders tabbelen in WordPress. In het admin dashboard kunnen t.z.t. eveneens enkele instellingen geconfigureerd worden.
- * Version: 0.0.1
- * Requires at least: 5.2.4
- * Requires PHP: 7.2.24
+ * Version: 0.0.2
+ * Requires at least: 5.4.1
+ * Requires PHP: 7.3.16
  * Author: Ruud Borghouts
  * Author URI: https://ruudborghouts.nl/
  * License: GPLv2 or later
@@ -14,6 +14,23 @@
  * Text Domain: The gettext text domain of the plugin. More information can be found in the Text Domain section of the How to Internationalize your Plugin page.
  * Domain Path: The domain path lets WordPress know where to find the translations. More information can be found in the Domain Path section of the How to Internationalize your Plugin page.
  */
+ 
+ 
+// Use the Plugin Update Checker add-on to receive automatic update notifications and one-click upgrades from GitHub.
+require 'plugin-update-checker/plugin-update-checker.php';
+$myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
+	'https://github.com/clubrescue/clubrescue-wp/',
+	__FILE__,
+	'clubrescue-wp'
+);
+	//Optional: Set the branch that contains the stable release.
+	$myUpdateChecker->setBranch('master');
+		//Alternative: If you only want updates from release assets, call the enableReleaseAssets() method instead of the branch check above.
+		//$myUpdateChecker->getVcsApi()->enableReleaseAssets();
+	//Optional: If you're using a private repository, specify the access token like this:
+	//$myUpdateChecker->setAuthentication('cr-private-repo-token-here');
+// End of the Plugin Update Checker add-on code.
+
 if ( is_admin() ) {
 	// we are in admin mode
 	include_once( plugin_dir_path( __FILE__ ) . 'clubrescue-wp-admin.php' );
