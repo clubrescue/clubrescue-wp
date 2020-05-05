@@ -1,5 +1,5 @@
 === Club.Rescue-WP ===
-Contributors: (this should be a list of wordpress.org userid's)
+Contributors: borghoutsr
 Donate link: https://ruudborghouts.nl/
 Tags: comments, spam
 Requires at least: 5.4.1
@@ -9,7 +9,7 @@ Requires PHP: 7.3.16
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-Here is a short description of the plugin.  This should be no more than 150 characters.  No markup here.
+Adds features and shortcodes for integrating Club.Rescue tables in WordPress. Some settings can (i.d.t.) also be configured in the admin dashboard.
 
 == Description ==
 
@@ -40,50 +40,47 @@ you put the stable version, in order to eliminate any doubt.
 
 == Installation ==
 
-This section describes how to install the plugin and get it working.
+This section describes how to install the plugin and get it working for the first time. Afterwards updates can be performed through the 'Plugins' screen in WordPress directly.
 
 e.g.
 
-1. Upload the plugin files to the `/wp-content/plugins/plugin-name` directory, or install the plugin through the WordPress plugins screen directly.
-1. Activate the plugin through the 'Plugins' screen in WordPress
-1. Use the Settings->Plugin Name screen to configure the plugin
-1. (Make your instructions match the desired user flow for activating and installing your plugin. Include any steps that might be needed for explanatory purposes)
+1. Upload the plugin files to the `/wp-content/plugins/clubrescue-wp` directory.
+1. Activate the plugin through the 'Plugins' screen in WordPress.
+1. Use the Settings->C.R-WP screen to configure the plugin.
+1. Setup your My page and add the desired shortcodes.
 
 
 == Frequently Asked Questions ==
 
-= A question that someone might have =
+= Why should I use this plugin? =
 
-An answer to that question.
+You should only use this plugin if you are using Club.Rescue. This plugin will integrate the My Club.Rescue into your WordPress website.
 
 = What about foo bar? =
 
-Answer to foo bar dilemma.
+We believe this is a large misunderstanding. The term should have been bar foo!
 
 == Screenshots ==
 
-1. This screen shot description corresponds to screenshot-1.(png|jpg|jpeg|gif). Note that the screenshot is taken from
-the /assets directory or the directory that contains the stable readme.txt (tags or trunk). Screenshots in the /assets
-directory take precedence. For example, `/assets/screenshot-1.png` would win over `/tags/4.3/screenshot-1.png`
-(or jpg, jpeg, gif).
-2. This is the second screen shot
+1. This is a sample screen shot description.
+2. This is another sample screen shot description.
 
 == Changelog ==
 
-= 1.0 =
-* A change since the previous version.
-* Another change.
+= 0.0.2 =
+* Added automatic update notifications and one-click upgrades from GitHub.
+* Added plugin details view in the WordPress Plugins page.
 
-= 0.5 =
-* List versions from most recent at top to oldest at bottom.
+= 0.0.1 =
+* Initial plugin release with basic functionality for My Club.Rescue.
 
 == Upgrade Notice ==
 
-= 1.0 =
-Upgrade notices describe the reason a user should upgrade.  No more than 300 characters.
+= 0.0.2 =
+Last manual upgrade. Future update notifications are pushed to the WordPress dashboard. Enabling one-click upgrades.
 
-= 0.5 =
-This version fixes a security related bug.  Upgrade immediately.
+= 0.0.1 =
+This plugin integrates the My Club.Rescue pages into your WordPress site. Enabling white labeling Club.Rescue.
 
 == Arbitrary section ==
 

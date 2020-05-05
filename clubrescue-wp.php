@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Club.Rescue-WP
  * Plugin URI: https://github.com/clubrescue/clubrescue-wp
- * Description: Voegt functies en shortcodes toe voor het integreren van Club.Redders tabbelen in WordPress. In het admin dashboard kunnen t.z.t. eveneens enkele instellingen geconfigureerd worden.
+ * Description: Adds features and shortcodes for integrating Club.Rescue tables in WordPress. Some settings can (i.d.t.) also be configured in the admin dashboard.
  * Version: 0.0.2
  * Requires at least: 5.4.1
  * Requires PHP: 7.3.16
