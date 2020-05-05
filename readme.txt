@@ -13,30 +13,24 @@ Adds features and shortcodes for integrating Club.Rescue tables in WordPress. So
 
 == Description ==
 
-This is the long description.  No limit, and you can use Markdown (as well as in the following sections).
+Club.Rescue-WP is a plugin to include the My Club.Rescue module from [Club.Rescue](https://github.com/clubrescue/ 
+"Go to the Club.Rescue project repositories on GitHub") into your WordPress site. Club.Rescue is an application 
+that enables associations with their custom IT requirements and GDPR compliance.
 
-For backwards compatibility, if this section is missing, the full length of the short description will be used, and
-Markdown parsed.
+This plugin includes the following sections of My Club.Rescue:
 
-A few notes about the sections above:
+*   Personal data, provides members with their personal data registered by the association.
+*   Activities, overview of all activities that the members has or will be participating in.
+*   Internal certifications, internal certifications that the members has achieved.
+*   Federation certifications, external certifications from the federation the association is a member of.
+*   Federation functions, functions the member preforms on behalf of the federation the association is a member of.
+*   Internal documents, (planned for a future release) will contain internal documents that are relevant for members.
+*   Actions, all actions a member can perform like updating their address etc.
+*   Declarations, all declarations the member has declared and it's status.
 
-*   "Contributors" is a comma separated list of wordpress.org usernames
-*   "Tags" is a comma separated list of tags that apply to the plugin
-*   "Requires at least" is the lowest version that the plugin will work on
-*   "Tested up to" is the highest version that you've *successfully used to test the plugin*. Note that it might work on
-higher versions... this is just the highest one you've verified.
-*   Stable tag should indicate the Subversion "tag" of the latest stable version, or "trunk," if you use `/trunk/` for
-stable.
+    Note that Club.Rescue must be installed prior to activating this plugin in the `/clubredders` directory inside the WordPress root directory.
 
-    Note that the `readme.txt` of the stable tag is the one that is considered the defining one for the plugin, so
-if the `/trunk/readme.txt` file says that the stable tag is `4.3`, then it is `/tags/4.3/readme.txt` that'll be used
-for displaying information about the plugin.  In this situation, the only thing considered from the trunk `readme.txt`
-is the stable tag pointer.  Thus, if you develop in trunk, you can update the trunk `readme.txt` to reflect changes in
-your in-development version, without having that information incorrectly disclosed about the current stable version
-that lacks those changes -- as long as the trunk's `readme.txt` points to the correct stable tag.
-
-    If no stable tag is provided, it is assumed that trunk is stable, but you should specify "trunk" if that's where
-you put the stable version, in order to eliminate any doubt.
+    After activation all available shortcodes can be seen in the plugin configuration pages under Settings->C.R-WP.
 
 == Installation ==
 
