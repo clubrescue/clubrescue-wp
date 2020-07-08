@@ -97,6 +97,12 @@ function CRWP_getBondsFuncties(){
 	return $bondsFunctiesTable;
 }
 
+function CRWP_getDocumenten(){
+	$user = wp_get_current_user();
+	include './clubredders/mijncr-documenten.php';
+	return $documentlist;
+}
+
 function CRWP_getActiesWijzigen(){
 	$user = wp_get_current_user();
 	include './clubredders/mijncr-acties.php';
@@ -151,6 +157,7 @@ add_shortcode('crwp_activiteiten', 'CRWP_getActiviteiten');
 add_shortcode('crwp_verenigingsdiplomas', 'CRWP_getVerenigingsDiplomas');
 add_shortcode('crwp_bondsdiplomas', 'CRWP_getBondsDiplomas');
 add_shortcode('crwp_bondsfuncties', 'CRWP_getBondsFuncties');
+add_shortcode('crwp_documenten', 'CRWP_getDocumenten');
 add_shortcode('crwp_acties_wijzigen', 'CRWP_getActiesWijzigen');
 add_shortcode('crwp_acties_strandbewaking', 'CRWP_getActiesStrandbewaking');
 add_shortcode('crwp_acties_kader', 'CRWP_getActiesKader');
