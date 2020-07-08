@@ -3,7 +3,7 @@
  * Plugin Name: Club.Rescue-WP
  * Plugin URI: https://github.com/clubrescue/clubrescue-wp
  * Description: Adds features and shortcodes for integrating Club.Rescue tables in WordPress. Some settings can (i.d.t.) also be configured in the admin dashboard.
- * Version: 0.0.2
+ * Version: 0.0.3
  * Requires at least: 5.4.1
  * Requires PHP: 7.3.16
  * Author: Ruud Borghouts
