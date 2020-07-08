@@ -4,7 +4,7 @@ Donate link: https://ruudborghouts.nl/
 Tags: comments, spam
 Requires at least: 5.4.1
 Tested up to: 5.4
-Stable tag: 0.0.2
+Stable tag: 0.0.3
 Requires PHP: 7.3.16
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -60,6 +60,9 @@ We believe this is a large misunderstanding. The term should have been bar foo!
 2. This is another sample screen shot description.
 
 == Changelog ==
+
+= 0.0.3 =
+* Added MyCR Document section.
 
 = 0.0.2 =
 * Added automatic update notifications and one-click upgrades from GitHub.
