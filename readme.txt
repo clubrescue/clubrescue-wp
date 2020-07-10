@@ -2,9 +2,9 @@
 Contributors: borghoutsr
 Donate link: https://ruudborghouts.nl/
 Tags: comments, spam
-Requires at least: 5.4.1
+Requires at least: 5.4.2
 Tested up to: 5.4
-Stable tag: 0.0.3
+Stable tag: 0.0.4
 Requires PHP: 7.3.16
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -42,7 +42,7 @@ e.g.
 1. Activate the plugin through the 'Plugins' screen in WordPress.
 1. Use the Settings->C.R-WP screen to configure the plugin.
 1. Setup your My page and add the desired shortcodes.
-
+1. Example: [crwp_mycr otap="CR_installation_folder_name" source="MyCR_page_name_without_extension" table="MyCR_data_variable_name"]
 
 == Frequently Asked Questions ==
 
@@ -60,6 +60,9 @@ We believe this is a large misunderstanding. The term should have been bar foo!
 2. This is another sample screen shot description.
 
 == Changelog ==
+
+= 0.0.4 =
+* All shortcodes have been replaced by a single shortcode with attributes.
 
 = 0.0.3 =
 * Added MyCR Document section.
