@@ -4,7 +4,7 @@ Donate link: https://ruudborghouts.nl/
 Tags: comments, spam
 Requires at least: 5.4.2
 Tested up to: 5.4
-Stable tag: 0.0.4
+Stable tag: 0.0.5
 Requires PHP: 7.3.16
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -60,6 +60,10 @@ We believe this is a large misunderstanding. The term should have been bar foo!
 2. This is another sample screen shot description.
 
 == Changelog ==
+
+= 0.0.5 =
+* Added a function that allows My Club.Rescue to authenticate against O365 directly.
+* Authentication against WordPress will be depreciated in future C.R releases.
 
 = 0.0.4 =
 * All shortcodes have been replaced by a single shortcode with attributes.
