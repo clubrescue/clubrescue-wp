@@ -37,7 +37,7 @@ if ( is_admin() ) {
 
 // Trigger C.R O365 authentication
 function CRWP_O365_HEADERS() {
-	if(is_page('mijn-trb-nu-test')) {
+	if(is_page('mijn-trb-nu')) {
 		session_start();
 
 		if (!isset($_SESSION['token'])) {
