@@ -30,14 +30,26 @@ $myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
 	//$myUpdateChecker->setAuthentication('cr-private-repo-token-here');
 // End of the Plugin Update Checker add-on code.
 
-if ( is_admin() ) {
-	// we are in admin mode
-	include_once( plugin_dir_path( __FILE__ ) . 'clubrescue-wp-admin.php' );
+//if ( is_admin() ) {
+//	// we are in admin mode
+//	include_once( plugin_dir_path( __FILE__ ) . 'clubrescue-wp-admin.php' );
+//}
+
+define( 'CRWP_PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
+require_once CRWP_PLUGIN_DIR . '/clubrescue-wp-admin.php';
+
+function add_plugin_links( $links ) {
+	$links[] = '<a href="' .
+		admin_url( 'options-general.php?page=cr-wp' ) .
+		'">' . __('Settings') . '</a>';
+	return $links;
 }
+add_filter('plugin_action_links_'.plugin_basename(__FILE__), 'add_plugin_links');
 
 // Trigger C.R O365 authentication
 function CRWP_O365_HEADERS() {
-	if(is_page('mijn-trb-nu')) {
+	//if(is_page('mijn-trb-nu')) {
+	if(is_page(array('mijn-trb-nu', 'work', 'about', 'contact'))) {
 		session_start();
 
 		if (!isset($_SESSION['token'])) {
