@@ -2,10 +2,10 @@
 Contributors: borghoutsr
 Donate link: https://ruudborghouts.nl/
 Tags: comments, spam
-Requires at least: 5.4.2
-Tested up to: 5.4
-Stable tag: 0.0.5
-Requires PHP: 7.3.16
+Requires at least: 5.6
+Tested up to: 5.6
+Stable tag: 0.0.7
+Requires PHP: 7.4
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -61,6 +61,13 @@ We believe this is a large misunderstanding. The term should have been bar foo!
 
 == Changelog ==
 
+= 0.0.7 =
+* Added internationalization and Dutch localization (nl-NL).
+* We now accept new localizations by providing us the required po(/mo) files based on our provided POT.
+
+= 0.0.6 =
+* Added automatic updates as introduced by WordPress 5.5.
+
 = 0.0.5 =
 * Added a function that allows My Club.Rescue to authenticate against O365 directly.
 * Authentication against WordPress will be depreciated in future C.R releases.
@@ -79,6 +86,9 @@ We believe this is a large misunderstanding. The term should have been bar foo!
 * Initial plugin release with basic functionality for My Club.Rescue.
 
 == Upgrade Notice ==
+
+= 0.0.6 =
+Last manual triggerd upgrade. Future updates can be auto-deployed by enabling auto-updates (requires WordPress 5.5 or later).
 
 = 0.0.2 =
 Last manual upgrade. Future update notifications are pushed to the WordPress dashboard. Enabling one-click upgrades.

@@ -3,16 +3,15 @@
  * Plugin Name: Club.Rescue-WP
  * Plugin URI: https://github.com/clubrescue/clubrescue-wp
  * Description: Adds features and shortcodes for integrating Club.Rescue tables in WordPress. Some settings can (i.d.t.) also be configured in the admin dashboard.
- * Version: 0.0.5
- * Requires at least: 5.4.2
- * Requires PHP: 7.3.16
+ * Version: 0.0.7
+ * Requires at least: 5.6
+ * Requires PHP: 7.4
  * Author: Ruud Borghouts
  * Author URI: https://ruudborghouts.nl/
  * License: GPLv2 or later
  * License URI: https://www.gnu.org/licenses/gpl-2.0.html
- 
- * Text Domain: The gettext text domain of the plugin. More information can be found in the Text Domain section of the How to Internationalize your Plugin page.
- * Domain Path: The domain path lets WordPress know where to find the translations. More information can be found in the Domain Path section of the How to Internationalize your Plugin page.
+ * Text Domain: clubrescue-wp
+ * Domain Path: /languages
  */
 
 // Retrieve option value's:

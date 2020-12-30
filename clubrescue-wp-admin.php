@@ -50,15 +50,9 @@ Please try again later.',
 				?>
 			</form>
 			
-			<h3><?php echo esc_html__( 'Shortcode instructions' ); ?></h3>
-			<p><?php echo 'The following shortcodes are available (only) on pages listed under the \'My Club.Rescue pages\' setting;<br>
-			[crwp_mycr] will return the default source and variable data from My Club.Rescue as configured in the settings source and variable.<br>
-			The shortcode has three attributes that can be used to change the returned data:<br>
-			[crwp_mycr otap="clubrescue" source="mycr-attributes" table="lidTable"]<br>
-			otap defines the folder of the Club.Rescue installation that is used. Usefull for whitelabeling or testing installations.
-			source defines the My C.R submodule to include.
-			table defines the data set from the submodule to return.'; ?></p>
-			
+			<h3><?php echo esc_html__( 'Plugin documentation' ); ?></h3>
+			<p><?php echo 'The documentation for this plugin is available at <a href="https://clubrescue.github.io/crdocs-nl/clubrescue/modules/mycr-wp/" target="_blank">Club.Rescue docs</a>.'; ?></p>
+			 
 		</div>
 	<?php }
 
