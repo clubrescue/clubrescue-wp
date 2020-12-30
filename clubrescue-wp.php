@@ -1,5 +1,5 @@
 <?php
-/**
+/*
  * Plugin Name: Club.Rescue-WP
  * Plugin URI: https://github.com/clubrescue/clubrescue-wp
  * Description: Adds features and shortcodes for integrating Club.Rescue tables in WordPress. Some settings can (i.d.t.) also be configured in the admin dashboard.
@@ -13,6 +13,12 @@
  * Text Domain: clubrescue-wp
  * Domain Path: /languages
  */
+
+// Loading the Text Domain for internationalization.
+function clubrescue_wp_init() {
+	load_plugin_textdomain( 'clubrescue-wp', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
+}
+add_action( 'init', 'clubrescue_wp_init' );
 
 // Retrieve option value's:
 $crwp_settings = get_option( 'crwp_settings' ); // Array of All Options

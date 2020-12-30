@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Club."
 "Rescue-WP v0.0.7\n"
 "POT-Creation-Date: "
-"2020-12-30 09:26+0100\n"
+"2020-12-30 22:05+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Your "
 "Name <you@example.com>\n"
@@ -49,12 +49,73 @@ msgstr ""
 "X-Poedit-"
 "SearchPath-0: .\n"
 
-#: clubrescue-wp-admin.php:53
-msgid ""
-"Shortcode instructions"
+#: clubrescue-wp-admin.php:41
+msgid "Club.Rescue-WP"
 msgstr ""
 
-#: clubrescue-wp-admin.php:187
+#: clubrescue-wp-admin.php:42
+msgid ""
+"Settings and whitelabel "
+"options for My Club."
+"Rescue can be configured "
+"here."
+msgstr ""
+
+#: clubrescue-wp-admin.php:53
+msgid ""
+"Plugin documentation"
+msgstr ""
+
+#: clubrescue-wp-admin.php:54
+msgid ""
+"The documentation for "
+"this plugin is available "
+"at <a href=\"https://"
+"clubrescue.github.io/"
+"crdocs-en/clubrescue/"
+"modules/mycr-wp/\" "
+"target=\"_blank\">Club."
+"Rescue docs</a>."
+msgstr ""
+
+#: clubrescue-wp-admin.php:68
+msgid "General"
+msgstr ""
+
+#: clubrescue-wp-admin.php:75
+msgid "Advanced"
+msgstr ""
+
+#: clubrescue-wp-admin.php:82
+msgid ""
+"My Club.Rescue pages"
+msgstr ""
+
+#: clubrescue-wp-admin.php:90
+msgid "Whitelabel (OTAP)"
+msgstr ""
+
+#: clubrescue-wp-admin.php:98
+msgid "Default source"
+msgstr ""
+
+#: clubrescue-wp-admin.php:106
+msgid "Default variable"
+msgstr ""
+
+#: clubrescue-wp-admin.php:114
+msgid "Error message"
+msgstr ""
+
+#: clubrescue-wp-admin.php:122
+msgid "Club.Rescue link"
+msgstr ""
+
+#: clubrescue-wp-admin.php:130
+msgid "Branch"
+msgstr ""
+
+#: clubrescue-wp-admin.php:181
 msgid ""
 "This specifies the "
 "WordPress pages that "
@@ -72,11 +133,10 @@ msgid ""
 "and seperate multiple "
 "slug's with , for "
 "example my-cr or my-cr, "
-"my-extra-personal-"
-"page.                  "
+"my-extra-personal-page."
 msgstr ""
 
-#: clubrescue-wp-admin.php:200
+#: clubrescue-wp-admin.php:194
 msgid ""
 "This specifies the Club."
 "Rescue installation "
@@ -94,7 +154,7 @@ msgid ""
 "installation as a source."
 msgstr ""
 
-#: clubrescue-wp-admin.php:227
+#: clubrescue-wp-admin.php:221
 msgid ""
 "This specifies the My "
 "Club.Rescue submodule to "
@@ -104,7 +164,7 @@ msgid ""
 "shortcode."
 msgstr ""
 
-#: clubrescue-wp-admin.php:252
+#: clubrescue-wp-admin.php:246
 msgid ""
 "This specifies the "
 "default variable to load "
@@ -113,7 +173,7 @@ msgid ""
 "source attribute."
 msgstr ""
 
-#: clubrescue-wp-admin.php:263
+#: clubrescue-wp-admin.php:257
 msgid ""
 "This specifies the error "
 "message which will be "
@@ -122,7 +182,14 @@ msgid ""
 "loaded/displayed."
 msgstr ""
 
-#: clubrescue-wp-admin.php:274
+#: clubrescue-wp-admin.php:262
+msgid ""
+"Add a link to Club."
+"Rescue in the plugins "
+"dashboard."
+msgstr ""
+
+#: clubrescue-wp-admin.php:269
 msgid ""
 "This specifies if a link "
 "to your local Club."
@@ -131,7 +198,17 @@ msgid ""
 "plugins dashboard."
 msgstr ""
 
-#: clubrescue-wp-admin.php:285
+#: clubrescue-wp-admin.php:275
+msgid "Master (default)."
+msgstr ""
+
+#: clubrescue-wp-admin.php:277
+msgid ""
+"Development (only for "
+"test environments)."
+msgstr ""
+
+#: clubrescue-wp-admin.php:280
 msgid ""
 "This specifies the "
 "branch that will be used "
@@ -139,11 +216,11 @@ msgid ""
 "updates."
 msgstr ""
 
-#: clubrescue-wp.php:51
+#: clubrescue-wp.php:56
 msgid "Settings"
 msgstr ""
 
-#: clubrescue-wp.php:56
+#: clubrescue-wp.php:61
 msgid "Your Club.Rescue"
 msgstr ""
 

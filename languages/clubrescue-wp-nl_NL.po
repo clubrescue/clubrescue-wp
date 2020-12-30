@@ -4,10 +4,12 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Club.Rescue-WP v0.0.7\n"
-"POT-Creation-Date: 2020-12-30 09:26+0100\n"
-"PO-Revision-Date: \n"
-"Language-Team: Club.Rescue\n"
 "Report-Msgid-Bugs-To: Translator Name <translations@example.com>\n"
+"POT-Creation-Date: 2020-12-30 22:05+0100\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: Club.Rescue\n"
+"Language: nl_NL\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -19,32 +21,85 @@ msgstr ""
 "_x:1,2c;_n:1,2;_n_noop:1,2;__ngettext:1,2;__ngettext_noop:1,2;_c,_nc:4c,1,2\n"
 "X-Poedit-Basepath: ..\n"
 "X-Generator: Poedit 2.4.2\n"
-"Last-Translator: \n"
-"Language: nl_NL\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: clubrescue-wp-admin.php:53
-msgid "Shortcode instructions"
-msgstr "Shortcode-instructies"
+#: clubrescue-wp-admin.php:41
+msgid "Club.Rescue-WP"
+msgstr "Club.Redders-WP"
 
-#: clubrescue-wp-admin.php:187
-#, fuzzy
+#: clubrescue-wp-admin.php:42
+msgid ""
+"Settings and whitelabel options for My Club.Rescue can be configured here."
+msgstr ""
+"Instellingen en whitelabel-opties voor Mijn Club.Redders kunnen hier worden "
+"geconfigureerd."
+
+#: clubrescue-wp-admin.php:53
+msgid "Plugin documentation"
+msgstr "Plugin documentatie"
+
+#: clubrescue-wp-admin.php:54
+msgid ""
+"The documentation for this plugin is available at <a href=\"https://"
+"clubrescue.github.io/crdocs-en/clubrescue/modules/mycr-wp/\" target=\"_blank"
+"\">Club.Rescue docs</a>."
+msgstr ""
+"De documentatie voor deze plug-in is beschikbaar op <a href=\"https://"
+"clubrescue.github.io/crdocs-nl/clubrescue/modules/mycr-wp/\" target=\"_blank"
+"\">Club.Redders docs</a>."
+
+#: clubrescue-wp-admin.php:68
+msgid "General"
+msgstr "Algemeen"
+
+#: clubrescue-wp-admin.php:75
+msgid "Advanced"
+msgstr "Geavanceerd"
+
+#: clubrescue-wp-admin.php:82
+msgid "My Club.Rescue pages"
+msgstr "Mijn Club.Redders pagina's"
+
+#: clubrescue-wp-admin.php:90
+msgid "Whitelabel (OTAP)"
+msgstr "Whitelabel (OTAP)"
+
+#: clubrescue-wp-admin.php:98
+msgid "Default source"
+msgstr "Standaard bron"
+
+#: clubrescue-wp-admin.php:106
+msgid "Default variable"
+msgstr "Standaard variabele"
+
+#: clubrescue-wp-admin.php:114
+msgid "Error message"
+msgstr "Foutmelding"
+
+#: clubrescue-wp-admin.php:122
+msgid "Club.Rescue link"
+msgstr "Club.Redders link"
+
+#: clubrescue-wp-admin.php:130
+msgid "Branch"
+msgstr "Branch"
+
+#: clubrescue-wp-admin.php:181
 msgid ""
 "This specifies the WordPress pages that will contain the shortcodes provided "
 "by this plugin.<br>Only pages listed here will provide working shortcodes "
 "cause only these pages will trigger the O365 authentication for Club.Rescue."
 "<br>Provide pages by using there page slug and seperate multiple slug's "
-"with , for example my-cr or my-cr, my-extra-personal-page.                  "
+"with , for example my-cr or my-cr, my-extra-personal-page."
 msgstr ""
 "Dit specificeert de WordPress-pagina's die de shortcodes bevatten die door "
-"deze plug-in worden geleverd.<br>Alleen pagina's die hier worden vermeld, "
+"deze plug-in worden toegevoegd<br>Alleen pagina's die hier worden vermeld "
 "bieden werkende shortcodes, omdat alleen deze pagina's de O365-authenticatie "
-"voor Club.Redders activeren.<br>Bied pagina's door hun paginablok te "
-"gebruiken en scheid meerdere slug's met bijvoorbeeld mijn-cr of mijn-cr, "
-"mijn-extra-persoonlijke-pagina. "
+"voor Club.Redders aanroepen.<br>Geef de gewenste pagina's op door hun pagina "
+"slug te gebruiken en scheid meerdere slug's met een , bijvoorbeeld mijn-cr "
+"of mijn-cr, mijn-extra-persoonlijke-pagina."
 
-#: clubrescue-wp-admin.php:200
-#, fuzzy
+#: clubrescue-wp-admin.php:194
 msgid ""
 "This specifies the Club.Rescue installation folder. You can change that "
 "folder's name to whitelabel the tool.<br>A whitelabel is only usefull for "
@@ -56,37 +111,37 @@ msgstr ""
 "map wijzigen om de tool een whitelabel te geven.<br>Een whitelabel is alleen "
 "nuttig voor gebruikers die rechtstreeks toegang hebben tot Club.Redders."
 "<br>Als alternatief kunt u het otap-attribuut in de shortcode gebruiken om "
-"een ​​tweede (test) CR-installatie als bron."
+"een ​​tweede (test) CR-installatie als bron te gebruiken."
 
-#: clubrescue-wp-admin.php:227
-#, fuzzy
+#: clubrescue-wp-admin.php:221
 msgid ""
 "This specifies the My Club.Rescue submodule to use by default when not using "
 "the source attribute in the shortcode."
 msgstr ""
-"Dit specificeert de My Club.Redders submodule die standaard gebruikt moet "
+"Dit specificeert de Mijn Club.Redders submodule die standaard gebruikt moet "
 "worden wanneer het source attribuut in de shortcode niet gebruikt wordt."
 
-#: clubrescue-wp-admin.php:252
-#, fuzzy
+#: clubrescue-wp-admin.php:246
 msgid ""
 "This specifies the default variable to load from the My Club.Rescue "
 "submodule used in the source attribute."
 msgstr ""
 "Dit specificeert de standaardvariabele die moet worden geladen vanuit de "
-"submodule My Club.Redders die wordt gebruikt in het bronkenmerk."
+"submodule Mijn Club.Redders die wordt gebruikt in het bron attribuut."
 
-#: clubrescue-wp-admin.php:263
-#, fuzzy
+#: clubrescue-wp-admin.php:257
 msgid ""
 "This specifies the error message which will be displayed if the My Club."
 "Rescue pages cannot be loaded/displayed."
 msgstr ""
-"Dit specificeert het foutbericht dat wordt weergegeven als de My Club."
-"Redders-pagina's niet kunnen worden geladen/weergegeven."
+"Dit specificeert het foutbericht dat wordt weergegeven als Mijn Club.Redders-"
+"pagina's niet kunnen worden geladen/weergegeven."
 
-#: clubrescue-wp-admin.php:274
-#, fuzzy
+#: clubrescue-wp-admin.php:262
+msgid "Add a link to Club.Rescue in the plugins dashboard."
+msgstr "Voeg een link naar Club.Redders toe in het plug-ins-dashboard."
+
+#: clubrescue-wp-admin.php:269
 msgid ""
 "This specifies if a link to your local Club.Rescue installation will be "
 "displayed in the plugins dashboard."
@@ -94,19 +149,26 @@ msgstr ""
 "Dit specificeert of een link naar uw lokale Club.Redders-installatie wordt "
 "weergegeven in het plug-ins-dashboard."
 
-#: clubrescue-wp-admin.php:285
-#, fuzzy
+#: clubrescue-wp-admin.php:275
+msgid "Master (default)."
+msgstr "Master (standaard)."
+
+#: clubrescue-wp-admin.php:277
+msgid "Development (only for test environments)."
+msgstr "Ontwikkeling (alleen voor testomgevingen)."
+
+#: clubrescue-wp-admin.php:280
 msgid ""
 "This specifies the branch that will be used to check and deploy for updates."
 msgstr ""
-"Dit specificeert de vertakking die zal worden gebruikt om te controleren op "
-"updates en deze te implementeren."
+"Dit specificeert de branch die zal worden gebruikt om te controleren op "
+"updates en deze te installeren."
 
-#: clubrescue-wp.php:51
+#: clubrescue-wp.php:56
 msgid "Settings"
 msgstr "Instellingen"
 
-#: clubrescue-wp.php:56
+#: clubrescue-wp.php:61
 msgid "Your Club.Rescue"
 msgstr "Jouw Club.Redders"
 
@@ -149,3 +211,9 @@ msgstr "Onbekende status bij controle op nieuwe versie: \\\"%s\\\""
 #: plugin-update-checker/Puc/v4p10/Vcs/PluginUpdateChecker.php:98
 msgid "There is no changelog available."
 msgstr "Er is geen changelog beschikbaar."
+
+#~ msgid "The documentation for this plugin is available at."
+#~ msgstr "De documentatie voor deze plug-in is beschikbaar op."
+
+#~ msgid "Shortcode instructions"
+#~ msgstr "Shortcode-instructies"

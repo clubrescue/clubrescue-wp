@@ -38,8 +38,8 @@ Please try again later.',
 		) ); ?>
 
 		<div class="wrap">
-			<h2>Club.Rescue-WP</h2>
-			<p>Settings and whitelabel options for My Club.Rescue can be configured here.</p>
+			<h2><?php _e( 'Club.Rescue-WP', 'clubrescue-wp' ); ?></h2>
+			<p><?php _e( 'Settings and whitelabel options for My Club.Rescue can be configured here.', 'clubrescue-wp' ); ?></p>
 			<?php //settings_errors(); ?>
 
 			<form method="post" action="options.php">
@@ -50,8 +50,8 @@ Please try again later.',
 				?>
 			</form>
 			
-			<h3><?php echo esc_html__( 'Plugin documentation' ); ?></h3>
-			<p><?php echo 'The documentation for this plugin is available at <a href="https://clubrescue.github.io/crdocs-nl/clubrescue/modules/mycr-wp/" target="_blank">Club.Rescue docs</a>.'; ?></p>
+			<h3><?php _e( 'Plugin documentation', 'clubrescue-wp' ); ?></h3>
+			<p><?php _e( 'The documentation for this plugin is available at <a href="https://clubrescue.github.io/crdocs-en/clubrescue/modules/mycr-wp/" target="_blank">Club.Rescue docs</a>.', 'clubrescue-wp' ); ?></p>
 			 
 		</div>
 	<?php }
@@ -65,21 +65,21 @@ Please try again later.',
 
 		add_settings_section(
 			'club_rescue_wp_setting_general', // id
-			'General', // title
+			__( 'General', 'clubrescue-wp' ), // title
 			array( $this, 'club_rescue_wp_general_info' ), // callback
 			'club-rescue-wp-admin' // page
 		);
 
 		add_settings_section(
 			'club_rescue_wp_setting_advanced', // id
-			'Advanced', // title
+			__( 'Advanced', 'clubrescue-wp' ), // title
 			array( $this, 'club_rescue_wp_advanced_info' ), // callback
 			'club-rescue-wp-admin' // page
 		);
 
 		add_settings_field(
 			'crwp_pages', // id
-			'My Club.Rescue pages', // title
+			__( 'My Club.Rescue pages', 'clubrescue-wp' ), // title
 			array( $this, 'crwp_pages_callback' ), // callback
 			'club-rescue-wp-admin', // page
 			'club_rescue_wp_setting_general' // section
@@ -87,7 +87,7 @@ Please try again later.',
 
 		add_settings_field(
 			'crwp_otap', // id
-			'Whitelabel (OTAP)', // title
+			__( 'Whitelabel (OTAP)', 'clubrescue-wp' ), // title
 			array( $this, 'crwp_otap_callback' ), // callback
 			'club-rescue-wp-admin', // page
 			'club_rescue_wp_setting_general' // section
@@ -95,7 +95,7 @@ Please try again later.',
 
 		add_settings_field(
 			'crwp_source', // id
-			'Default source', // title
+			__( 'Default source', 'clubrescue-wp' ), // title
 			array( $this, 'crwp_source_callback' ), // callback
 			'club-rescue-wp-admin', // page
 			'club_rescue_wp_setting_general' // section
@@ -103,7 +103,7 @@ Please try again later.',
 
 		add_settings_field(
 			'crwp_variable', // id
-			'Default variable', // title
+			__( 'Default variable', 'clubrescue-wp' ), // title
 			array( $this, 'crwp_variable_callback' ), // callback
 			'club-rescue-wp-admin', // page
 			'club_rescue_wp_setting_general' // section
@@ -111,7 +111,7 @@ Please try again later.',
 
 		add_settings_field(
 			'crwp_errormessage', // id
-			'Error message', // title
+			__( 'Error message', 'clubrescue-wp' ), // title
 			array( $this, 'crwp_errormessage_callback' ), // callback
 			'club-rescue-wp-admin', // page
 			'club_rescue_wp_setting_general' // section
@@ -119,7 +119,7 @@ Please try again later.',
 
 		add_settings_field(
 			'crwp_links', // id
-			'Club.Rescue link', // title
+			__( 'Club.Rescue link', 'clubrescue-wp' ), // title
 			array( $this, 'crwp_links_callback' ), // callback
 			'club-rescue-wp-admin', // page
 			'club_rescue_wp_setting_advanced' // section
@@ -127,7 +127,7 @@ Please try again later.',
 
 		add_settings_field(
 			'crwp_branch', // id
-			'Branch', // title
+			__( 'Branch', 'clubrescue-wp' ), // title
 			array( $this, 'crwp_branch_callback' ), // callback
 			'club-rescue-wp-admin', // page
 			'club_rescue_wp_setting_advanced' // section
@@ -180,7 +180,7 @@ Please try again later.',
 			'<p class="description">%s</p>',
 			__( 'This specifies the WordPress pages that will contain the shortcodes provided by this plugin.<br>'
 			  . 'Only pages listed here will provide working shortcodes cause only these pages will trigger the O365 authentication for Club.Rescue.<br>'
-			  . 'Provide pages by using there page slug and seperate multiple slug\'s with , for example my-cr or my-cr, my-extra-personal-page.                  ' )
+			  . 'Provide pages by using there page slug and seperate multiple slug\'s with , for example my-cr or my-cr, my-extra-personal-page.', 'clubrescue-wp' )
 		);
 	}
 
@@ -193,7 +193,7 @@ Please try again later.',
 			'<p class="description">%s</p>',
 			__( 'This specifies the Club.Rescue installation folder. You can change that folder\'s name to whitelabel the tool.<br>'
 			  . 'A whitelabel is only usefull for users that will access Club.Rescue directly.<br>'
-			  . 'As a alternative you can use the otap attribute in the shortcode to trigger a second (testing) C.R installation as a source.' )
+			  . 'As a alternative you can use the otap attribute in the shortcode to trigger a second (testing) C.R installation as a source.', 'clubrescue-wp' )
 		);
 	}
 
@@ -218,7 +218,7 @@ Please try again later.',
 		</select> <?php
 		printf(
 			'<p class="description">%s</p>',
-			__( 'This specifies the My Club.Rescue submodule to use by default when not using the source attribute in the shortcode.' )
+			__( 'This specifies the My Club.Rescue submodule to use by default when not using the source attribute in the shortcode.', 'clubrescue-wp' )
 		);
 	}
 
@@ -243,7 +243,7 @@ Please try again later.',
 		</select> <?php
 		printf(
 			'<p class="description">%s</p>',
-			__( 'This specifies the default variable to load from the My Club.Rescue submodule used in the source attribute.' )
+			__( 'This specifies the default variable to load from the My Club.Rescue submodule used in the source attribute.', 'clubrescue-wp' )
 		);
 	}
 
@@ -254,29 +254,30 @@ Please try again later.',
 		);
 		printf(
 			'<p class="description">%s</p>',
-			__( 'This specifies the error message which will be displayed if the My Club.Rescue pages cannot be loaded/displayed.' )
+			__( 'This specifies the error message which will be displayed if the My Club.Rescue pages cannot be loaded/displayed.', 'clubrescue-wp' )
 		);
 	}
 
 	public function crwp_links_callback() {
+		$crwp_links_labeltranslation = esc_html__( 'Add a link to Club.Rescue in the plugins dashboard.', 'clubrescue-wp' );
 		printf(
-			'<input type="checkbox" name="crwp_settings[crwp_links]" id="crwp_links" value="true" %s> <label for="crwp_links">Add a link to Club.Rescue in the plugins dashboard.</label>',
+			'<input type="checkbox" name="crwp_settings[crwp_links]" id="crwp_links" value="true" %s> <label for=crwp_links">'.$crwp_links_labeltranslation.'</</label>',
 			( isset( $this->club_rescue_wp_options['crwp_links'] ) && $this->club_rescue_wp_options['crwp_links'] === 'true' ) ? 'checked' : ''
 		);
 		printf(
 			'<p class="description">%s</p>',
-			__( 'This specifies if a link to your local Club.Rescue installation will be displayed in the plugins dashboard.' )
+			__( 'This specifies if a link to your local Club.Rescue installation will be displayed in the plugins dashboard.', 'clubrescue-wp' )
 		);
 	}
 
 	public function crwp_branch_callback() {
 		?> <fieldset><?php $checked = ( isset( $this->club_rescue_wp_options['crwp_branch'] ) && $this->club_rescue_wp_options['crwp_branch'] === 'master' ) ? 'checked' : '' ; ?>
-		<label for="crwp_branch-0"><input type="radio" name="crwp_settings[crwp_branch]" id="crwp_branch-0" value="master" <?php echo $checked; ?>> Master (default).</label><br>
+		<label for="crwp_branch-0"><input type="radio" name="crwp_settings[crwp_branch]" id="crwp_branch-0" value="master" <?php echo $checked; ?>><?php _e( 'Master (default).', 'clubrescue-wp' ); ?></label><br>
 		<?php $checked = ( isset( $this->club_rescue_wp_options['crwp_branch'] ) && $this->club_rescue_wp_options['crwp_branch'] === 'dev' ) ? 'checked' : '' ; ?>
-		<label for="crwp_branch-1"><input type="radio" name="crwp_settings[crwp_branch]" id="crwp_branch-1" value="dev" <?php echo $checked; ?>> Development (only for test environments).</label></fieldset> <?php
+		<label for="crwp_branch-1"><input type="radio" name="crwp_settings[crwp_branch]" id="crwp_branch-1" value="dev" <?php echo $checked; ?>><?php _e( 'Development (only for test environments).', 'clubrescue-wp' ); ?></label></fieldset> <?php
 		printf(
 			'<p class="description">%s</p>',
-			__( 'This specifies the branch that will be used to check and deploy for updates.' )
+			__( 'This specifies the branch that will be used to check and deploy for updates.', 'clubrescue-wp' )
 		);
 	}
 
