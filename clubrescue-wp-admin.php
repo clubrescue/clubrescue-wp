@@ -33,7 +33,8 @@ class ClubRescueWP {
       		'crwp_variable'     => 'lidTable',
       		'crwp_errormessage' => 'My Club.Rescue is down for maintenance.
 Please try again later.',
-      		'crwp_links'        => 'true',
+      		'crwp_css'          => 'Load variable placeholder here...',
+			'crwp_links'        => 'true',
       		'crwp_branch'       => 'master'
 		) ); ?>
 
@@ -116,6 +117,14 @@ Please try again later.',
 			'club-rescue-wp-admin', // page
 			'club_rescue_wp_setting_general' // section
 		);
+		
+		add_settings_field(
+			'crwp_css', // id
+			__( 'Club.Rescue CSS', 'clubrescue-wp' ), // title
+			array( $this, 'crwp_css_callback' ), // callback
+			'club-rescue-wp-admin', // page
+			'club_rescue_wp_setting_advanced' // section
+		);
 
 		add_settings_field(
 			'crwp_links', // id
@@ -154,6 +163,10 @@ Please try again later.',
 
 		if ( isset( $input['crwp_errormessage'] ) ) {
 			$sanitary_values['crwp_errormessage'] = esc_textarea( $input['crwp_errormessage'] );
+		}
+		
+		if ( isset( $input['crwp_css'] ) ) {
+			$sanitary_values['crwp_css'] = esc_textarea( $input['crwp_css'] );
 		}
 
 		if ( isset( $input['crwp_links'] ) ) {
@@ -255,6 +268,17 @@ Please try again later.',
 		printf(
 			'<p class="description">%s</p>',
 			__( 'This specifies the error message which will be displayed if the My Club.Rescue pages cannot be loaded/displayed.', 'clubrescue-wp' )
+		);
+	}
+	
+	public function crwp_css_callback() {
+		printf(
+			'<textarea class="large-text" rows="5" name="crwp_settings[crwp_css]" id="crwp_css">%s</textarea>',
+			isset( $this->club_rescue_wp_options['crwp_css'] ) ? esc_attr( $this->club_rescue_wp_options['crwp_css']) : ''
+		);
+		printf(
+			'<p class="description">%s</p>',
+			__( 'This specifies the CSS code which will be used to displaye the My Club.Rescue pages. Change it to match your site layout.', 'clubrescue-wp' )
 		);
 	}
 

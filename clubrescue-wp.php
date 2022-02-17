@@ -20,6 +20,84 @@ function clubrescue_wp_init() {
 }
 add_action( 'init', 'clubrescue_wp_init' );
 
+function clubrescue_wp_css() {
+	// Stylesheet for CRWP toggles accordion=false:
+	$clubrescue_wp_css = '<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	                      <style>
+							input {
+								display: none;
+							}
+							
+							input + label::before {
+								font-family: "Material Icons";
+								content: "add_circle""   ";
+							}
+							
+							input:checked + label::before {
+								font-family: "Material Icons";
+								content: "remove_circle""   ";
+							}
+							
+							label {
+								display: block;    
+								padding: 8px 22px;
+								margin: 0 0 1px 0;
+								cursor: pointer;
+								background: #F2F2F2;
+								border-radius: 3px;
+								color: #FFF;
+								transition: ease .5s;
+								color: #888;
+							}
+							
+							label:hover {
+								background: #f2f2f2;
+							}
+							
+							.content {
+								background: #FFFFFF;
+								padding: 10px 25px;
+								/* border: 1px solid #A7A7A7; */
+								margin: 0 0 1px 0;
+								border-radius: 3px;
+								box-shadow: 0 1px 2px rgb(0 0 0 / 20%);
+							}
+							
+							input + label + .content {
+								display: none;
+								/* animation style (requires specific height in relation to content, not ready for production)
+								opacity: 0;
+								height: 0;
+								font-size: 0;
+								padding: 0 25px;
+								transition: ease .5s;
+								 */
+							}
+							
+							input:checked + label + .content {
+								display: block;
+								/* animation style (requires specific height in relation to content, not ready for production)
+								opacity: 1;
+								height: 120px;
+								font-size: 14px;
+								padding: 10px 25px;
+								 */
+							}
+						  </style>';
+	echo $clubrescue_wp_css;
+	
+	// Retrieve option value's:
+	// $crwp_settings = get_option( 'crwp_settings' ); // Array of All Options
+	// $validate = $crwp_settings["crwp_css"];
+	// if($validate == $crwp_settings["crwp_css"]){
+	//	echo $validate;
+	//}else{
+	//	echo $clubrescue_wp_css;
+	//}
+
+}
+add_action( 'wp_head', 'clubrescue_wp_css' );
+
 // Retrieve option value's:
 $crwp_settings = get_option( 'crwp_settings' ); // Array of All Options
 
